@@ -62,6 +62,24 @@
 		</dependency>
 	</dependencies>
 
+	<profiles>
+        <profile>
+            <id>DEV</id>
+            <properties>
+                <activatedProperties>DEV</activatedProperties>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>PROD</id>
+            <properties>
+                <activatedProperties>PROD</activatedProperties>
+            </properties>
+        </profile>
+    </profiles>
+
 	<build>
 		<plugins>
 			<plugin>
