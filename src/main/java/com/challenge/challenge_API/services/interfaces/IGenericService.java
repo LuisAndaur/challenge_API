@@ -1,4 +1,4 @@
-package com.challenge.challenge_API.interfaces;
+package com.challenge.challenge_API.services.interfaces;
 
 import java.util.List;
 

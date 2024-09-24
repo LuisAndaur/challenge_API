@@ -1,7 +1,7 @@
-package com.challenge.challenge_API.services;
+package com.challenge.challenge_API.services.impl;
 
 import com.challenge.challenge_API.domain.Localidad;
-import com.challenge.challenge_API.interfaces.ILocalidadService;
+import com.challenge.challenge_API.services.interfaces.ILocalidadService;
 import com.challenge.challenge_API.mappers.ILocalidadMapper;
 import com.challenge.challenge_API.persistance.entities.LocalidadEntity;
 import com.challenge.challenge_API.persistance.repositories.ILocalidadRepository;
@@ -40,11 +40,6 @@ public class LocalidadService implements ILocalidadService {
 
     @Override
     public Localidad getByCodigo(int codigo) {
-        return null;
-    }
-
-    @Override
-    public Localidad getByCodigo(String codigo) {
         return null;
     }
 

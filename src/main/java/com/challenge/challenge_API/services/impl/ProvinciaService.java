@@ -1,7 +1,7 @@
-package com.challenge.challenge_API.services;
+package com.challenge.challenge_API.services.impl;
 
 import com.challenge.challenge_API.domain.Provincia;
-import com.challenge.challenge_API.interfaces.IProvinciaService;
+import com.challenge.challenge_API.services.interfaces.IProvinciaService;
 import com.challenge.challenge_API.mappers.IProvinciaMapper;
 import com.challenge.challenge_API.persistance.entities.ProvinciaEntity;
 import com.challenge.challenge_API.persistance.repositories.IProvinciaRepository;
@@ -39,18 +39,14 @@ public class ProvinciaService implements IProvinciaService {
     }
 
     @Override
-    public Provincia getByCodigo(int codigo) {
-        return null;
-    }
-
-    @Override
     public Provincia getByCodigo(String codigo) {
         return null;
     }
 
     @Override
     public Provincia create(Provincia entity) {
-        return null;
+        ProvinciaEntity auxEntity = _mapper.toEntity(entity);
+        return _mapper.toDto(_provinciaRepository.save(auxEntity));
     }
 
     @Override
